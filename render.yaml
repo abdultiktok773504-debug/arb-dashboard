@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: arb-dashboard
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MEXC_API_KEY
+        sync: false
+      - key: MEXC_API_SECRET
+        sync: false
+      - key: WEEX_API_KEY
+        sync: false
+      - key: WEEX_API_SECRET
+        sync: false
+      - key: WEEX_API_PASSPHRASE
+        sync: false
