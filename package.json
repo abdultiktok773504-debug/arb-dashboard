@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Crypto arbitrage API server - MEXC vs WEEX",
   "main": "dist/index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
